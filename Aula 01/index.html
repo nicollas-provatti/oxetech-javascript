@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Exemplo de JavaScript</h1>
+  <button id="btn">Clique aqui</button>
+  <script>
+    console.log("Olá, do console");
+
+    const btn = document.getElementById("btn");
+    btn.onclick = () => {
+      confirm("Está gostando no JavaScript ?");
+    }
+  </script>
+</body>
+</html>
