@@ -407,9 +407,9 @@ Primeiro, o bloco dentro do `do` é executado, onde é exibida a mensagem `"Digi
 
 |Estrutura    |	Quando usar|
 |-------------|------------|
-| `for`	      |Quando não sabemos quantas repetições serão necessárias |
-| `while`     |Quando queremos garantir ao menos uma execução |
-| `do-while`  | Quandosabemos o número exato de repetições |
+| `for`	      | Quando sabemos o número exato de repetições |
+| `while`     | Quando não sabemos quantas repetições serão necessárias|
+| `do-while`  | Quando queremos garantir ao menos uma execução |
 
 ---
 
@@ -456,3 +456,4 @@ for (let i = 1; i <= 5; i++) {
 - Use `break` e `continue` com cautela para não tornar o código confuso. Eles são poderosos, mas podem levar a comportamentos inesperados se usados em excesso.
  
 ---
+
