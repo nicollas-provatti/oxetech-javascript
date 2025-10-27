@@ -42,25 +42,11 @@ const produtos = [
 ];
 
 // 1. Listar apenas nomes e preços
-produtos.forEach((produto) =>
-  console.log(`${produto.nome} - R$ ${produto.preco.toFixed(2)}`)
-);
 
 // 2. Criar um array com os nomes
-const nomes = produtos.map((produto) => produto.nome);
-console.log(nomes);
 
 // 3. Filtrar produtos em estoque
-const disponiveis = produtos.filter((produto) => produto.emEstoque);
-console.log(disponiveis);
 
 // 4. Calcular o preço total de todos os produtos
-const total = produtos.reduce(
-  (soma, produto) => soma + produto.preco * produto.estoque,
-  0
-);
-console.log(total);
 
 // 5. Encontrar um produto específico
-const produto = produtos.find((produto) => produto.nome == "Café");
-console.log(produto);
