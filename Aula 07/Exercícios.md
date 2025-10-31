@@ -229,13 +229,13 @@ Na função `substituirLista()`:
 Na função `estilizarParagrafo()`:
 
 - Selecione o parágrafo pelo id `destaque`.
-    - Altere a cor do texto para `"blue`".
-    - Aumente o tamanho da fonte para `"24px"`.
-<br>
+- Altere a cor do texto para `"blue`".
+- Aumente o tamanho da fonte para `"24px"`.
+
 - Selecione todos os itens da lista (`li`).
-    - Aplique uma cor de fundo diferente (ex: `"lightblue"`).
-    - Altere a cor do texto para `"darkblue"`.
-    - Deixe o texto em **negrito**.
+- Aplique uma cor de fundo diferente (ex: `"lightblue"`).
+- Altere a cor do texto para `"darkblue"`.
+- Deixe o texto em **negrito**.
 ---
 
 ## 🔹 Exercício 4 - Manipulação de Atributos
