@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de pagamento de hipoteca</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <div class="mortgage-calculator">
+      <div class="mortgage-calculator__form">
+        <div class="mortgage-calculator__header">
+          <h1 class="mortgage-calculator__title">Calculadora de Hipoteca</h1>
+          <button class="mortgage-calculator__clear-button">
+            Limpar Tudo
+          </button>
+        </div>
+
+        <div class="mortgage-calculator__body">
+          <form class="mortgage-form">
+            <div class="mortgage-form__field">
+              <label for="mortgage-amount" class="mortgage-form__label">
+                Valor da Hipoteca
+              </label>
+              <input type="number" id="mortgage-amount" class="mortgage-form__input" />
+            </div>
+
+            <div class="mortgage-form__field">
+              <label for="mortgage-term" class="mortgage-form__label">
+                Prazo da Hipoteca
+              </label>
+              <input type="number" id="mortgage-term" class="mortgage-form__input" />
+            </div>
+
+            <div class="mortgage-form__field">
+              <label for="interest-rate" class="mortgage-form__label">
+                Taxa de Juros
+              </label>
+              <input type="number" id="interest-rate" class="mortgage-form__input" step="0.1" />
+            </div>
+
+            <div class="mortgage-form__field">
+              <span class="mortgage-form__label">Tipo de Hipoteca</span>
+              <div class="mortgage-form__options">
+                <label class="mortgage-form__option">
+                  <input type="radio" name="mortgage-type" id="repayment" class="mortgage-form__radio" />
+                  Reembolso
+                </label>
+
+                <label class="mortgage-form__option">
+                  <input type="radio" name="mortgage-type" id="interest-only" class="mortgage-form__radio" />
+                  Somente Juros
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="mortgage-form__submit-button">
+              <img src="./assets/images/icon-calculator.svg" alt="icon-calculator" />
+              Calcular Pagamentos
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="mortgage-calculator__results">
+        <div class="mortgage-results mortgage-results--empty">
+          <div class="mortgage-results__image">
+            <img src="./assets/images/illustration-empty.svg" alt="illustration-empty" />
+          </div>
+          <h2 class="mortgage-results__title">Resultados exibidos aqui</h2>
+          <p class="mortgage-results__description">
+            Preencha o formulário e clique em <strong>“calcular pagamentos”</strong> para ver
+            quanto seriam seus pagamentos mensais.
+          </p>
+        </div>
+
+        <div class="mortgage-results mortgage-results--completed">
+          <h2 class="mortgage-results__title">Seus resultados</h2>
+          <p class="mortgage-results__description">
+            Seus resultados são mostrados abaixo com base nas informações
+            fornecidas. Para ajustar os resultados, edite o formulário e
+            clique em “calcular pagamentos” novamente.
+          </p>
+
+          <div class="mortgage-results__summary">
+            <div class="mortgage-results__item">
+              <h3 class="mortgage-results__item-title">
+                Seus pagamentos mensais
+              </h3>
+              <p class="mortgage-results__value-repayments">$X,XXX.XX</p>
+            </div>
+            <div class="mortgage-results__item">
+              <h3 class="mortgage-results__item-title">
+                Total que você pagará ao longo do prazo
+              </h3>
+              <p class="mortgage-results__value-total">$X,XXX.XX</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
