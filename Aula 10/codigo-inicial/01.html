@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        padding: 40px;
+        line-height: 1.6;
+      }
+
+      h1 {
+        color: #0057b7;
+        border-bottom: 2px solid #0057b7;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        color: #eb9915;
+        border-bottom: 2px solid #eb9915;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        padding: 12px 16px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+      }
+
+      p:nth-of-type(1) {
+        background-color: #e1f5fe;
+      }
+
+      p:nth-of-type(2) {
+        background-color: #fff3e0;
+      }
+
+      ul {
+        margin-top: 20px;
+        padding-left: 20px;
+      }
+
+      li {
+        background-color: #fff3e0;
+        padding: 10px;
+        margin-bottom: 6px;
+        border-radius: 5px;
+      }
+
+      li::marker {
+        font-weight: bold;
+      }
+
+      button {
+        padding: 8px 12px;
+        background-color: #1b1b1b;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #404040;
+      }
+
+      #mensagem {
+        margin-top: 20px;
+        padding: 12px 16px;
+        background-color: #404040;
+        border-radius: 4px;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🔵 Manipulação do DOM</h1>
+    <p>
+      No DOM, podemos fazer manipulações mais complexas como acessar parentes
+      específicos de um elemento (pai, irmão, etc) e criar tags HTML e adicionar
+      usando JavaScript.
+    </p>
+
+    <h2>🔍 Como criar e adicionar elementos ?</h2>
+    <p>
+      É possível criar novos elementos dinamicamente e adicioná-los à página.
+      Isso é útil quando queremos modificar ou expandir a estrutura da nossa
+      página sem recarregar a página inteira. Aqui estão os principais métodos
+      para criar e adicionar elementos ao DOM:
+    </p>
+    <!-- <ul>
+      <li>
+        O método
+        <code>createElement()</code> é usado para
+        <strong>criar um novo elemento HTML</strong>.
+      </li>
+      <li>
+        O método
+        <code>appendChild()</code> permite que você <strong>adicionar</strong> um
+        nó como um filho de outro elemento.
+      </li>
+      <li>
+        O método
+        <code>cloneNode()</code> cria um <strong>cópia</strong> exata do nó. A cópia pode ser profunda ou superficial.
+      </li>
+    </ul> -->
+  </body>
+</html>
