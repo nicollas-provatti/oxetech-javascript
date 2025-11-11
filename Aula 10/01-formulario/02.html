@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML: Parte 03 - Formulário</title>
+    <style>
+      textarea {
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Preencha o formulário</h1>
+    <form>
+      <label for="curso">Escolha um curso:</label>
+      <select name="curso" id="curso">
+        <optgroup label="Front-end">
+          <option value="html-css">HTML e CSS</option>
+          <option value="js">JavaScript</option>
+        </optgroup>
+        
+        <optgroup label="Back-end">
+          <option value="nj">NodeJS</option>
+          <option value="bd">Banco de Dados</option>
+        </optgroup>
+      </select>
+
+      <br><br>
+
+      <label for="mensagem">Porque você escolheu esse curso ?</label>
+      <textarea name="mensagem" id="mensagem"></textarea>
+    </form>
+  </body>
+</html>

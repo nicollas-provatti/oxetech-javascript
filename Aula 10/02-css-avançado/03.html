@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS: Parte 05 - Transições</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      .botao {
+        padding: 15px 30px;
+        font-size: 18px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+
+        transition: background-color 0.5s ease, box-shadown 0.5s ease, transform 1s linear;
+      }
+
+      .botao:hover {
+        background-color: #45a049;
+        transform: scale(1.2);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="botao">Passe o mouse</button>
+  </body>
+</html>

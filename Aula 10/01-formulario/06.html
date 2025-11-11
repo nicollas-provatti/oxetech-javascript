@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML: Parte 03 - Formulário</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        padding: 2rem;
+      }
+
+      .form-container {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .form-container h1 {
+        text-align: center;
+        margin-bottom: 1.8rem;
+        color: #333;
+      }
+
+      fieldset {
+        border: 1px solid #ccc;
+        padding: 24px;
+        margin-bottom: 24px;
+        border-radius: 8px;
+      }
+
+      legend {
+        font-weight: bold;
+        padding: 0 8px;
+        color: #2575fc
+      }
+
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 500;
+        color: #444;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="password"],
+      select,
+      textarea {
+        resize: none;
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 18px;
+        border: 1px solid #bbb;
+        border-radius: 6px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: none;
+        border-color: #2575fc;
+      }
+
+      #modalidade,
+      #novidades {
+        margin-bottom: 18px;
+      }
+
+      #modalidade label,
+      #novidades label {
+        display: inline-block;
+        margin-right: 16px;
+        font-weight: normal;
+      }
+
+      button {
+        width: 100%;
+        padding: 14px;
+        background-color: #2575fc;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        border-radius: 24px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #1a5ed8;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Formulário de Inscrição</h1>
+
+      <form>
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="sobrenome">Sobrenome:</label>
+          <input type="text" id="sobrenome" name="sobrenome" required />
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="telefone">Telefone</label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            placeholder="(xx) xxxxx-xxxx"
+          />
+        </fieldset>
+
+        <fieldset id="informacoes-conta">
+          <legend>Informações da Conta</legend>
+          <label for="usuario">Nome de Usuário</label>
+          <input type="text" id="usuario" name="usuario" required />
+
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferências</legend>
+
+          <label for="curso">Selecione um curso:</label>
+          <select id="curso" name="curso">
+            <optgroup label="Tecnologia">
+              <option>Programação Web</option>
+              <option>Banco de Dados</option>
+            </optgroup>
+            <optgroup label="Design">
+              <option>UI/UX</option>
+              <option>Design Gráfico</option>
+            </optgroup>
+          </select>
+
+          <div id="modalidade">
+            <label>Modalidade:</label>
+            <input
+              type="radio"
+              id="online"
+              name="modalidade"
+              value="online"
+              checked
+            />
+            <label for="online">Online</label>
+            <input
+              type="radio"
+              id="presencial"
+              name="modalidade"
+              value="presencial"
+            />
+            <label for="presencial">Presencial</label>
+          </div>
+
+          <div id="novidades">
+            <label>Receber novidades:</label>
+            <input type="checkbox" id="novidades" name="novidades" />
+            <label for="novidades">Sim, quero receber por e-mail</label>
+          </div>
+        </fieldset>
+
+        <fieldset id="mensagem">
+          <legend>Mensagem</legend>
+          <label for="mensagem">Alguma observação?</label>
+          <textarea id="mensagem" name="mensagem" rows="8"></textarea>
+        </fieldset>
+
+        <button type="submit">Enviar Inscrição</button>
+      </form>
+    </div>
+  </body>
+</html>
